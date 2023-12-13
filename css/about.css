@@ -187,7 +187,7 @@ h4 {
 @media (max-width: 600px) {
   p {
     font-size: 18px; /* Adjust the font size for smaller screens */
-    width: 180%; /* Set a different width for smaller screens */
+    width: 160%; /* Set a different width for smaller screens */
     margin: 0 -55px ; /* Center the paragraph on smaller screens */
     padding-top: 10vh; /* Adjust the padding for smaller screens */
   }
@@ -210,7 +210,7 @@ h4 {
   background-size: 80%;
   animation: shine 10s linear infinite;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 section{
