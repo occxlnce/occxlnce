@@ -1,0 +1,279 @@
+*,
+*::after,
+*::before {
+        box-sizing: border-box;
+}
+
+:root {
+        font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+        margin: 0;
+        place-items: center;
+        align-content: start;
+        --color-text: #6c7377;
+        --color-bg: #090a0b;
+        --color-link: #6c7377;
+        --color-link-hover: #f25301;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: sofia-pro, sans-serif;
+        overflow-x: hidden;
+		scrollbar-color: #090a0b #f25301;
+}
+
+/* cursor */
+.cursor-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+} 
+
+.cursor {
+  position: fixed;
+  top: -30px;
+  left: -30px;
+}
+
+.circle {
+  width: 80px; /* Set the width and height to your desired size */
+  height: 30px;
+  border: 3px solid #f25301; /* Set the border color to orange */
+  border-radius: 50%;
+  color: #fff;
+  transform: scale(.8);
+  transition: all .2s ease-in-out;
+  mix-blend-mode: difference; /* Set the mix blend mode */
+}
+
+/* Hover effect for tag links */
+a:hover {
+  mix-blend-mode: hard-light;
+  background-color: #fff;
+  border-radius: 30px;
+  opacity: 0.1;
+  backdrop-filter: blur(10px);
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f2530180; /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Set the border-radius for a rounded thumb */
+}
+
+/* Optional: Change the color of the scrollbar track (background) */
+body::-webkit-scrollbar-track {
+  background-color: #000; /* Set the color of the scrollbar track */
+}
+
+a {
+        text-decoration: none;
+        color: var(--color-link);
+        outline: none;
+        font-family: 'Germania One', cursive;
+
+}
+
+a:hover,
+a:focus {
+        color: var(--color-link-hover);
+        outline: none;
+}
+
+
+/* hood */
+
+button {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  translate: -50% 0;
+  font-size: 1.5rem;
+  font-family: 'sofia-pro', sans-serif;
+  font-weight: 100;
+  padding: 1rem 3rem;
+  border-radius: 96px 96px 96px 96px;
+  border: 0;
+  mix-blend-mode: darken;
+  transition: filter 0.2s;
+  background: transparent;
+  color: #f25301;
+  backdrop-filter: blur(10px);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  mix-blend-mode: none;
+}
+
+button::after {
+  content: "";
+  left: 8%;
+  right: 8%;
+  height: 10%;
+  top: 130%;
+  background: white;
+  position: absolute;
+  border-radius: 100px;
+  mix-blend-mode: difference;
+}
+
+button:is(:hover, :focus-visible) {
+  filter: brightness(0.7);
+}
+
+h1 {
+  font-weight:800;
+  font-family: 'Germania One', cursive;
+  font-size: 60px;
+  background: linear-gradient(45deg, #090a0b, #090a0b, #f25301);
+  padding-bottom: 50px;
+  padding-top: 145px;
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 15s linear;
+  position: relative;
+  text-align: center;
+
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -300%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+h2 {
+  font-weight: 300;
+  color: #f25301;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: 200;
+  color: #f25301;
+  font-size: 28px;
+}
+
+h4 {
+  font-weight: 500;
+  font-family: 'Germania One', cursive;
+  color: #fff;
+  font-size: 25px; /* Using viewport width as a unit for responsiveness */
+  text-align: center;
+
+  /* Optional: Set a maximum font size to avoid extremely large text on larger screens */
+  max-font-size: 30px;
+}
+
+h5 {
+  font-weight:800;
+  font-family: 'Germania One', cursive;
+  font-size: 60px;
+  padding-bottom: 50px;
+  padding-top: 145px;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  -webkit-text-stroke: 1.5px rgb(127 47 6);
+	text-stroke: 1.5px #f2530180;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;	
+
+}
+
+p {
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+  text-align: center;
+  line-height: 2em;
+}
+	
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  h4 {
+    font-size: 28px; /* Adjust the font size for smaller screens */
+  }
+  
+    h5 {
+    font-size: 32px; /* Adjust the font size for smaller screens */
+  }
+}
+
+
+section {
+  height: 90vh;
+  display: grid;
+  align-items: center;
+  font-size: clamp(1rem, 3vw + 0.5rem, 6rem);
+}
+
+main {
+  display: grid;
+  gap: 8rem;
+  justify-items: center;
+  padding-top: 170vh;
+  padding-bottom: 50vh;
+}
+
+img {
+  height: 35vh;
+  width: 50vh;
+  border-radius: 20px;
+}
+
+img:nth-of-type(even) {
+  translate: -11% 0;
+}
+
+img:nth-of-type(odd) {
+  translate: 1% 0;
+}
+
+/** special para **/
+
+p .typing-text{
+  margin: 0;
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink ease 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  } 50% {
+    opacity: 1;
+  }
+}
