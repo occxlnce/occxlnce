@@ -207,7 +207,7 @@ h4 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 90%;
   animation: shine 10s linear infinite;
   position: relative;
   text-align: left;
