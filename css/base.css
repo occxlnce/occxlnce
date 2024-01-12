@@ -16,7 +16,8 @@ html {
 body {
         margin: 0;
         place-items: center;
-        align-content: start;
+        align-content: center;
+        overflow-x: hidden;
         --color-text: #6c7377;
         --color-bg: #090a0b;
         --color-link: #6c7377;
