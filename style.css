@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color:  #090a0b;
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 3rem;
   font-family: sofia-pro, sans-serif;
@@ -193,10 +198,6 @@ h1 {
   }
 }
 
-body {
-  background-color:  #090a0b;
-}
-
 /* index form */
 
 form {
@@ -362,7 +363,7 @@ section.myfoot {
 
 @media (max-width: 480px) {
   .linksmyfoot {
-    font-size: 16px;
+    font-size: 18px;
   }
   
 }
