@@ -341,7 +341,7 @@ footer {
 section.myfoot {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 30px;
   padding-bottom: 60px;
   padding-left: 60px;
@@ -363,7 +363,7 @@ section.myfoot {
 
 @media (max-width: 480px) {
   .linksmyfoot {
-    font-size: 18px;
+    font-size: 20px;
   }
   
 }
