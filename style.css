@@ -201,7 +201,7 @@ h1 {
 /* index form */
 
 form {
-  max-width: 600px;
+  max-width: 500px;
   text-align: center;
   margin: 20px auto;
 }
@@ -214,7 +214,7 @@ form textarea {
   -webkit-border-radius: 8px;
   border-radius: 20px;
   display: block;
-  width: 75%;
+  width: 80%;
   margin-top: 1em;
   font-family: "sofia-pro", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -365,11 +365,5 @@ section.myfoot {
   .linksmyfoot {
     font-size: 20px;
   }
-  
-form {
-  max-width: 360px;
-  text-align: center;
-  margin: 20px auto;
-}
 
 }
