@@ -201,7 +201,7 @@ h1 {
 /* index form */
 
 form {
-  max-width: 500px;
+  max-width: 550px;
   text-align: center;
   margin: 20px auto;
 }
@@ -344,14 +344,13 @@ section.myfoot {
   justify-content: center;
   gap: 30px;
   padding-bottom: 60px;
-  padding-left: 60px;
   width: 100%;
 }
 
 @media (width > 420px) {
   section.myfoot {
     align-items: center;
-    padding-left: 0;
+    
     gap: 20px;
   }
 
