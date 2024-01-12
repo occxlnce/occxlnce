@@ -366,4 +366,10 @@ section.myfoot {
     font-size: 20px;
   }
   
+form {
+  max-width: 360px;
+  text-align: center;
+  margin: 20px auto;
+}
+
 }
