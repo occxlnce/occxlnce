@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color:  #090a0b;
-  overflow-x: hidden;
-}
-
 h1 {
   font-size: 3rem;
   font-family: sofia-pro, sans-serif;
@@ -18,6 +13,34 @@ h1 {
   text-align: center;
   margin: 2rem 0;
 }
+
+
+h5 {
+  font-weight:800;
+  font-family: 'Germania One', cursive;
+  font-size: 60px;
+  padding-bottom: 50px;
+  padding-top: 145px;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  -webkit-text-stroke: 1.5px rgb(255 255 255);
+	text-stroke: 1.5px #f2530180;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;	
+
+}	
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  
+    h5 {
+    font-size: 32px; /* Adjust the font size for smaller screens */
+  }
+}
+
 
 .wrapper {
   width: 90%;
@@ -198,10 +221,14 @@ h1 {
   }
 }
 
+body {
+  background-color:  #090a0b;
+}
+
 /* index form */
 
 form {
-  max-width: 550px;
+  max-width: 600px;
   text-align: center;
   margin: 20px auto;
 }
@@ -214,7 +241,7 @@ form textarea {
   -webkit-border-radius: 8px;
   border-radius: 20px;
   display: block;
-  width: 90%;
+  width: 100%;
   margin-top: 1em;
   font-family: "sofia-pro", sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -284,16 +311,6 @@ form textarea {
 
 /* bruce banner */
 
-
-.background {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 ul {
   display: flex;
   list-style: none;
@@ -316,19 +333,6 @@ p.legal {
   line-height: 2em;
 }
 
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scaleY(3) scaleX(2.25);
-  transform-origin: bottom center;
-  box-sizing: border-box;
-  display: block;
-  pointer-events: none;
-}
-
 footer {
   position: relative;
   left: 0;
@@ -341,16 +345,17 @@ footer {
 section.myfoot {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 30px;
   padding-bottom: 60px;
+  padding-left: 60px;
   width: 100%;
 }
 
 @media (width > 420px) {
   section.myfoot {
     align-items: center;
-    
+    padding-left: 0;
     gap: 20px;
   }
 
@@ -362,7 +367,61 @@ section.myfoot {
 
 @media (max-width: 480px) {
   .linksmyfoot {
-    font-size: 20px;
+    font-size: 18px;
   }
-
+  
 }
+
+
+/* github card */
+
+.card {
+  width: 320px;
+  height: 160px;
+  padding: 20px;
+  color: white;
+  background: #090a0b;
+  border: 2px solid #f2530180;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: auto; /* Center the card horizontally */
+  margin-top: 20px; /* Adjust the top margin for vertical centering */
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.card .heading {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card .footer {
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.card:hover {
+  border-radius: 96px;
+  background-color: #f2530180;
+  transform: scale(0.95) rotate(8deg); /* Correct the property names */
+  box-shadow: 0px 3px 187.5px 7.5px rgba(255, 107, 0, 0.4);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+}
+
