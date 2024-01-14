@@ -10,9 +10,9 @@
 
 body {
 	margin: 0;
-	--color-text: #f25301;
+	--color-text: #f2530180;
 	--color-bg: #090a0b;
-	--color-link: #f25301;
+	--color-link: #f2530180;
 	--color-link-hover: #fff;
 	--color-alt: #fff;
 	color: var(--color-text);
@@ -98,7 +98,7 @@ main {
 .circle {
   width: 80px; /* Set the width and height to your desired size */
   height: 30px;
-  border: 3px solid #f25301; /* Set the border color to orange */
+  border: 3px solid #f2530180; /* Set the border color to orange */
   border-radius: 50%;
   color: #fff;
   transform: scale(.8);
