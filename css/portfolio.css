@@ -1,0 +1,66 @@
+  :root {
+      --bg: #090a0b;
+    }
+
+    a {
+      color: #f2530180;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .bg {
+      background-color: var(--bg);
+      padding: 2vh; /* Add some padding for better visibility on smaller screens */
+    }
+
+    .custom-content p {
+      background: -webkit-linear-gradient(45deg, #f2530180 0%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span {
+      color: #fff;
+      text-align: left;
+      padding: 0vh 1vh;
+    }
+	
+	.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -45px;
+    margin-left: -35px;
+}
+
+.homeowner {
+	padding: 400px 20px 0 20px;
+	text-align: center;
+}
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 767px) {
+      .custom-container {
+        padding: 0 20px; /* Adjust the padding for smaller screens */
+      }
+
+      .display-3 {
+        font-size: 1.8rem; /* Adjust the font size for smaller screens */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .display-3 {
+        font-size: 2.5rem; /* Adjust the font size for medium screens */
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .display-3 {
+        font-size: 3rem; /* Adjust the font size for large screens */
+      }
+    }
