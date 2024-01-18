@@ -3,12 +3,11 @@ const text = document.querySelector('.typing-text');
 
 // make a words array
 const words = [
-  "Hello I'm Murunzi,",
-  "the creative mind driving Occxlnce Office.",
-  "or just Occxlnce for short",
-  "Here, my passion for design and technical finesse.",
-  "come together to shape remarkable digital experiences"
+  "Occxlnce Office is a creative portfolio website that highlights a collection of diverse projects and creative endeavors.",
+  "These projects encompass a wide range of fields, from web development and brand identity to design work".
+  "The website offers insights into the creative process and the outcomes of each project.",
 ];
+
 
 // start typing effect
 setTyper(text, words);
