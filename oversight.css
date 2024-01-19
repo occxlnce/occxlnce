@@ -203,7 +203,7 @@ a:focus {
 }
 
 .tiles--columns-rotated {
-	--tiles-height: 180vmax;
+	--tiles-height: 200vmax;
 }
 
 .tiles--columns {
