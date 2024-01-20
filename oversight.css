@@ -310,8 +310,7 @@ a:focus {
 	width: calc(16.6666% - var(--tile-margin) * 2);
 	height: calc( var(--tileswrap-height) / 3 - (3 * var(--tile-margin) / 2));
 	margin: var(--tile-margin);
-	background-size: contain;
-  background-repeat: no-repeat;
+	background-size: cover;
 	background-position: 50% 50%;
 }
 
