@@ -310,7 +310,7 @@ a:focus {
 	width: calc(16.6666% - var(--tile-margin) * 2);
 	height: calc( var(--tileswrap-height) / 3 - (3 * var(--tile-margin) / 2));
 	margin: var(--tile-margin);
-	background-size: cover;
+	background-size: contain;
 	background-position: 50% 50%;
 }
 
@@ -376,9 +376,9 @@ a:focus {
 	padding: 3rem;
 	margin: 0;
 	line-height: 0.8;
-	font-family: lato, sans-serif;
+	font-family: sofia-pro, sans-serif;
 	font-weight: 800;
-	font-style: stromg;
+	font-style: strong;
   color: #fff;
 }
 
@@ -460,7 +460,7 @@ html.has-scroll-dragging {
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: black;
+	background-color: #f2530180;
 	opacity: 0.5;
 	width: 7px;
 	border-radius: 10px;
