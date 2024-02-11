@@ -17,7 +17,7 @@
     }
 
     .custom-content p {
-      background: -webkit-linear-gradient(45deg, #f2530180 0%, #fff 100%);
+      background: -webkit-linear-gradient(45deg, #f2530180 0%, #000 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
