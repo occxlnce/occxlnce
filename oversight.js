@@ -3,9 +3,9 @@ const text = document.querySelector('.typing-text');
 
 // make a words array
 const words = [
-  "We are a creative studio that highlights a collection of diverse projects & creative endeavors.",
-  "These projects encompass a wide range of fields, from development & brand identity to design work",
-  "Our website offers insights into the creative process & the outcomes of each project."
+  "BRANDING AND IDENTITY.",
+  "ILLUSTRATIONS AND ICONOGRAPHY",
+  "WEBSITE DESIGN."
 ];
 
 
