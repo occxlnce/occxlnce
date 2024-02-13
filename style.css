@@ -41,6 +41,40 @@ h5 {
   }
 }
 
+/* image tucker comp */
+.slider {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 97.25px);
+  overflow: hidden;
+}
+.slider .slider-row {
+  width: 2956px;
+  height: 194.5px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/ubiquity-summit-web-01.png);
+  background-size: 2956px 194.5px;
+  -webkit-animation: slide 50s linear infinite;
+          animation: slide 50s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
 
 .wrapper {
   width: 90%;
