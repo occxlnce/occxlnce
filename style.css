@@ -51,7 +51,7 @@ h5 {
 .slider .slider-row {
   width: 100%; /* Adjust as needed */
   height: 194.5px;
-  background-image: url(image1.jpg), url(image2.jpg), url(image3.jpg); /* Add multiple image URLs separated by commas */
+  background-image: url(img/tinbox.png), url(img/Poster1.png), url(img/chigubu.jpg); /* Add multiple image URLs separated by commas */
   background-size: 100% 194.5px; /* Adjust as needed */
   background-repeat: no-repeat;
   animation: slide 50s linear infinite;
