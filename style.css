@@ -49,30 +49,24 @@ h5 {
   overflow: hidden;
 }
 .slider .slider-row {
-  width: 100%; /* Adjust as needed */
+  width: 2956px;
   height: 194.5px;
-  background-image: url(img/tinbox.png), url(img/Poster1.png), url(img/chigubu.jpg); /* Add multiple image URLs separated by commas */
-  background-size: 100% 194.5px; /* Adjust as needed */
-  background-repeat: no-repeat;
-  animation: slide 50s linear infinite;
-}
-
-@keyframes slide {
-  0% {
-    background-position: 0 0;
-  }
-  33.33% {
-    background-position: 100% 0; /* Adjust for the number of images */
-  }
-  66.67% {
-    background-position: 200% 0; /* Adjust for the number of images */
-  }
-  100% {
-    background-position: 300% 0; /* Adjust for the number of images */
-  }
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/ubiquity-summit-web-01.png);
+  background-size: 2956px 194.5px;
+  -webkit-animation: slide 50s linear infinite;
+          animation: slide 50s linear infinite;
 }
 
 @-webkit-keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+@keyframes slide {
   from {
     background-position-x: 0;
   }
