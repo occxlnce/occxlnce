@@ -49,31 +49,29 @@ h5 {
   overflow: hidden;
 }
 .slider .slider-row {
-  width: 2956px;
+  width: 100%; /* Adjust as needed */
   height: 194.5px;
-  background-image: url(img/wall1.png);
-  background-size: 2956px 194.5px;
-  -webkit-animation: slide 50s linear infinite;
-          animation: slide 50s linear infinite;
-}
-
-@-webkit-keyframes slide {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -2956px;
-  }
+  background-image: url(image1.jpg), url(image2.jpg), url(image3.jpg); /* Add multiple image URLs separated by commas */
+  background-size: 100% 194.5px; /* Adjust as needed */
+  background-repeat: no-repeat;
+  animation: slide 50s linear infinite;
 }
 
 @keyframes slide {
-  from {
-    background-position-x: 0;
+  0% {
+    background-position: 0 0;
   }
-  to {
-    background-position-x: -2956px;
+  33.33% {
+    background-position: 100% 0; /* Adjust for the number of images */
+  }
+  66.67% {
+    background-position: 200% 0; /* Adjust for the number of images */
+  }
+  100% {
+    background-position: 300% 0; /* Adjust for the number of images */
   }
 }
+
 
 
 .wrapper {
